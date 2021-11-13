@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:pos="https://example.org/position/1.0/">
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Tree">
+    <pos:above rdf:resource="https://en.wikipedia.org/wiki/House"/> 
+  </rdf:Description>
+  <rdf:Description rdf:about="https://Sun">
+    <pos:right-of rdf:resource="https://en.wikipedia.org/wiki/Birds"/>
+    <pos:above rdf:resource="https://en.wikipedia.org/wiki/Mountains"/> 
+  </rdf:Description>
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Birds">
+    <pos:above rdf:resource="https://en.wikipedia.org/wiki/Mountains"/> 
+  </rdf:Description>
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Mountains">
+    <pos:above rdf:resource="https://en.wikipedia.org/wiki/River"/> 
+    <pos:above rdf:resource="https://en.wikipedia.org/wiki/House"/> 
+  </rdf:Description>
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/House">
+    <pos:right-of rdf:resource="https://en.wikipedia.org/wiki/Boat"/>
+    <pos:above rdf:resource="https://en.wikipedia.org/wiki/Land"/> 
+  </rdf:Description>
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Boat">
+    <pos:above rdf:resource="https://en.wikipedia.org/wiki/River"/> 
+  </rdf:Description>
+  <rdf:Description rdf:about="https://en.wikipedia.org/wiki/Land">
+    <pos:right-of rdf:resource="https://en.wikipedia.org/wiki/River"/> 
+  </rdf:Description>
+</rdf:RDF>
