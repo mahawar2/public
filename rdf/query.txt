@@ -1,26 +1,26 @@
 # What all are to the right of ”Boat”?
-PREFIX rdf: ⟨http://www.w3.org/1999/02/22-rdf-syntax-ns# ⟩
-PREFIX pos: ⟨https://example.org/position/1.0/⟩
-PREFIX obj: ⟨https://en.wikipedia.org/wiki/⟩
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pos: <https://example.org/position/1.0/>
+PREFIX obj: <https://en.wikipedia.org/wiki/>
 SELECT ?name WHERE {
-  ?name (pos:right-of)* obj:Boat
-  FILTER(?name!=obj:Boat)
+  ?name (pos:right-of)* pos:Boat
+  FILTER(?name!=pos:Boat)
 }
 
 # What all are above ”River”?
-PREFIX rdf: ⟨http://www.w3.org/1999/02/22-rdf-syntax-ns# ⟩
-PREFIX pos: ⟨https://example.org/position/1.0/⟩
-PREFIX obj: ⟨https://en.wikipedia.org/wiki/⟩
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pos: <https://example.org/position/1.0/>
+PREFIX obj: <https://en.wikipedia.org/wiki/>
 SELECT ?name WHERE {
-  ?name (pos:above)* obj:River
-  FILTER(?name!=obj:River)
+  ?name (pos:above)* pos:River
+  FILTER(?name!=pos:River)
 }
 
 # What all are below ”Sun”?
-PREFIX rdf: ⟨http://www.w3.org/1999/02/22-rdf-syntax-ns# ⟩
-PREFIX pos: ⟨https://example.org/position/1.0/⟩
-PREFIX obj: ⟨https://en.wikipedia.org/wiki/⟩
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pos: <https://example.org/position/1.0/>
+PREFIX obj: <https://en.wikipedia.org/wiki/>
 SELECT ?name WHERE {
-  obj:Sun (pos:above)* ?name
-  FILTER(?name!=obj:Sun)
+  pos:Sun (pos:above)* ?name
+  FILTER(?name!=pos:Sun)
 }
