@@ -18,7 +18,7 @@ Subjects and objects are defineded using URIs.
 
 ## Sparql queries on RDF
 [HP's AQL](http://sparql.org/sparql.html) is on online tool to execute queries on RDF/N3 documents. 
-![Here](images/HP's ARQ.png?raw=true "HP's ARQ.") is a screenshot of the query executer. In the input query box type the query type, type the link for RDF document in URL input box. Select the output result format and then click Get Result.
+![Here](images/ARQ.png?raw=true "HP's ARQ.") is a screenshot of the query executer. In the input query box type the query type, type the link for RDF document in URL input box. Select the output result format and then click Get Result.
 An example of query for above data graph is shown below.
 ### Query Statement
 ```sh
