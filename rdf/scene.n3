@@ -1,0 +1,15 @@
+@prefix ns0: <https://example.org/position/1.0/> .
+
+<https://en.wikipedia.org/wiki/Tree> ns0:above <https://en.wikipedia.org/wiki/House> .
+<https://en.wikipedia.org/wiki/Sun>
+  ns0:right-of <https://en.wikipedia.org/wiki/Birds> ;
+  ns0:above <https://en.wikipedia.org/wiki/Mountains> .
+
+<https://en.wikipedia.org/wiki/Birds> ns0:above <https://en.wikipedia.org/wiki/Mountains> .
+<https://en.wikipedia.org/wiki/Mountains> ns0:above <https://en.wikipedia.org/wiki/River>, <https://en.wikipedia.org/wiki/House> .
+<https://en.wikipedia.org/wiki/House>
+  ns0:right-of <https://en.wikipedia.org/wiki/Boat> ;
+  ns0:above <https://en.wikipedia.org/wiki/Land> .
+
+<https://en.wikipedia.org/wiki/Boat> ns0:above <https://en.wikipedia.org/wiki/River> .
+<https://en.wikipedia.org/wiki/Land> ns0:right-of <https://en.wikipedia.org/wiki/River> 
