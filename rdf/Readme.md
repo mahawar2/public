@@ -22,7 +22,7 @@ Subjects and objects are defineded using URIs.
 An example of query for above data graph is shown below.
 ### Query Statement
 ```sh
-What all are to the right of "Boat"?
+What are immediate right of "Boat"?
 ```
 ### Sparql Query Statement
 ```sh
@@ -31,8 +31,7 @@ PREFIX pos: <https://example.org/position/1.0/>
 PREFIX obj: <https://en.wikipedia.org/wiki/>
 
 SELECT ?name WHERE {
-  ?name (pos:right-of)* obj:Boat
-  FILTER(?name!=obj:Boat)
+  ?name pos:right-of obj:Boat
 }
 ```
 ### Sparql Query Ouput from [HP's AQL](http://sparql.org/sparql.html)
